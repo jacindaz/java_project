@@ -8,9 +8,9 @@ all: clean $(TARGET).class run
 
 %.class: %.java
 	$(JAVAC) $<
-	$(JAVA)  $(TARGET)
 
 run:
+	$(JAVA)  $(TARGET)
 
 clean:
-	@rm -f *.class
+	rm -fv *.class
